@@ -250,9 +250,9 @@ LINKCHECK := $(shell command -v markdown-link-check 2> /dev/null)
 get-linkcheck:
 ifndef LINKCHECK
 	sudo apt-get update &&
-	UNAME_M=$(shell uname -m) &&
+	UNAME_M=$(shell uname -m)
 	ifeq ($(UNAME_M), aarch64)
-  		sudo apt-get install -y nodejs-dev node-gyp libssl1.0-dev &&
+  		sudo apt-get install -y nodejs-dev node-gyp libssl1.0-dev;
 	endif
 	sudo apt-get unstall -y npm
 	npm install -g markdown-link-check@3.6.2
