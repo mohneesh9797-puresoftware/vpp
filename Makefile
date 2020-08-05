@@ -249,7 +249,7 @@ LINKCHECK := $(shell command -v markdown-link-check 2> /dev/null)
 # Get link check tool
 get-linkcheck:
 ifndef LINKCHECK
-	sudo apt-get update &&
+	sudo apt-get update
 	UNAME_M=$(shell uname -m)
 	ifeq ($(UNAME_M), aarch64)
 		apt-get install -y nodejs-dev node-gyp libssl1.0-dev
