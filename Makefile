@@ -251,7 +251,10 @@ get-linkcheck:
 ifndef LINKCHECK
 	sudo apt-get update
 	UNAME_M=$(shell uname -m)
-	ifeq($(UNAME_M),"aarch64")
+	ifeq ($(TEST),"TRUE")
+		echo "Do something"
+	endif
+	ifeq ($(UNAME_M),"aarch64")
 		apt-get install -y nodejs-dev node-gyp libssl1.0-dev
 	endif
 	sudo apt-get unstall -y npm
