@@ -7,7 +7,9 @@ go_import_path: github.com/contiv/vpp
 
 git:
   depth: 1
-
+arch:
+    - amd64
+    - arm64
 go:
   - 1.13.1
 
