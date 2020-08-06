@@ -250,16 +250,8 @@ LINKCHECK := $(shell command -v markdown-link-check 2> /dev/null)
 get-linkcheck:
 ifndef LINKCHECK
 	sudo apt-get update
-	var1=50
-	var2=60   
-	if [ $var1 == 60 ]
-	then
-		echo "YES"
-	else
-		echo "NO"
-	fi
 	UNAME_M=$(shell uname -m)
-	if $(TEST) = TRUE)
+	ifeq ("$(TEST)"= "TRUE")
 		echo "Do something"
 	endif
 	ifeq ($(UNAME_M),"aarch64")
