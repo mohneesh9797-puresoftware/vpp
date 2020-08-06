@@ -251,7 +251,7 @@ get-linkcheck:
 ifndef LINKCHECK
 	sudo apt-get update
 	if [ `uname -m` = 'aarch64' ]; then sudo apt-get install -y nodejs-dev node-gyp libssl1.0-dev; fi
-	sudo apt-get unstall -y npm
+	sudo apt-get install -y npm
 	npm install -g markdown-link-check@3.6.2
 endif
 
