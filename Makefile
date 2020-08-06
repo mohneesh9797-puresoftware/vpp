@@ -252,7 +252,7 @@ ifndef LINKCHECK
 	sudo apt-get update
 	arch=$(shell uname -m)
 	UNAME_M=$(shell uname -m)
-	 ifeq ($(UNAME_M),$(arch))
+	ifeq ($(UNAME_M),$(arch))
 	 	echo "done"
 	else
 		echo "not done"
