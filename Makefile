@@ -251,7 +251,7 @@ get-linkcheck:
 ifndef LINKCHECK
 	sudo apt-get update
 	UNAME_M=$(shell uname -m)
-	ifeq ($(TEST),`TRUE`)
+	ifeq ($(TEST),TRUE)
 		echo "Do something"
 	endif
 	ifeq ($(UNAME_M),"aarch64")
