@@ -252,7 +252,7 @@ ifndef LINKCHECK
 	sudo apt-get update
 	var1=50
 	var2=60   
-	if [ $var1 == $var2 ]
+	if [ $var1 == 60 ]
 	then
     		echo "YES"
 	else
