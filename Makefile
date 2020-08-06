@@ -250,7 +250,13 @@ LINKCHECK := $(shell command -v markdown-link-check 2> /dev/null)
 get-linkcheck:
 ifndef LINKCHECK
 	sudo apt-get update
+	arch=$(shell uname -m)
 	UNAME_M=$(shell uname -m)
+	 ifeq ($(UNAME_M),$(arch))
+	 	echo "done"
+	else
+		echo "not done"
+	endif
 	ifeq ("$(TEST)"= "TRUE")
 		echo "Do something"
 	endif
