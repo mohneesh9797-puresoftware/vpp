@@ -254,9 +254,9 @@ ifndef LINKCHECK
 	var2=60   
 	if [ $var1 == 60 ]
 	then
-    		echo "YES"
+		echo "YES"
 	else
-    		echo "NO"
+		echo "NO"
 	fi
 	UNAME_M=$(shell uname -m)
 	if $(TEST) = TRUE)
